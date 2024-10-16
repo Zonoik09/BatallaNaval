@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             String coordenada = letras[columnaActual] + filaActual;
+                            Toast.makeText(MainActivity.this, "Has pulsado el botón en: " + coordenada, Toast.LENGTH_SHORT).show();
                             Log.d("Coordenada", "Has pulsado el botón en: " + coordenada);
                         }
                     });
